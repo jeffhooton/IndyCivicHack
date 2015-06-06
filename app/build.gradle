@@ -25,6 +25,7 @@ dependencies {
     compile 'com.squareup.mortar:mortar:0.16'
     compile 'com.squareup.flow:flow:0.8'
     compile 'com.jakewharton:butterknife:6.1.0'
+    compile 'info.hoang8f:android-segmented:1.0.5'
     compile fileTree(dir: 'libs', include: 'bolts-android-*.jar')
     compile fileTree(dir: 'libs', include: 'Parse-*.jar')
     compile fileTree(dir: 'libs', include: 'ParseCrashReporting-*.jar')

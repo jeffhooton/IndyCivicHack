@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<com.elevenfifty.www.indycivichack.View.CheckView xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:orientation="vertical" android:layout_height="match_parent">
 
@@ -27,17 +27,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Choice One:"
             android:layout_alignParentLeft="true"
             android:layout_margin="20dp"
             android:id="@+id/firstChoiceTV"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="4"
             android:layout_alignParentRight="true"
             android:layout_margin="20dp"
             android:id="@+id/firstChoiceStatus"/>
     </RelativeLayout>
-    
+
     <RelativeLayout
         android:layout_width="wrap_content"
         android:layout_height="60dp"
@@ -46,11 +48,13 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
+            android:text="Choice Two:"
             android:layout_margin="20dp"
             android:id="@+id/secondChoiceTV"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="3"
             android:layout_alignParentRight="true"
             android:layout_margin="20dp"
             android:id="@+id/secondChoiceStatus"/>
@@ -63,15 +67,32 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Choice Three:"
             android:layout_alignParentLeft="true"
             android:layout_margin="20dp"
             android:id="@+id/thirdChoiceTV"/>
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:text="Accepted"
             android:layout_alignParentRight="true"
             android:layout_margin="20dp"
             android:id="@+id/thirdChoiceStatus"/>
     </RelativeLayout>
 
-</LinearLayout>
+    <info.hoang8f.android.segmented.SegmentedGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center">
+        <RadioButton
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Accept"/>
+        <RadioButton
+            android:layout_width="140dp"
+            android:layout_height="wrap_content"
+            android:text="Decline"/>
+
+    </info.hoang8f.android.segmented.SegmentedGroup>
+
+</com.elevenfifty.www.indycivichack.View.CheckView>
