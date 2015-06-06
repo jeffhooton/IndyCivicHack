@@ -1,0 +1,486 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.elevenfifty.www.indycivichack.View.ProfileView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:src="@mipmap/ips_logo"
+            android:id="@+id/logoIV"
+            android:layout_gravity="center_horizontal"/>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginLeft="10dp"
+                android:text="Demographic Section: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/emailTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Email Address:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:id="@+id/displayEmailProf"
+                android:layout_marginRight="20dp"
+                android:hint="Not Found"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/lastNameTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Last Name:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/lastNameETProf"
+                android:layout_marginRight="20dp"
+                android:hint="Last Name"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstNameTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="First Name:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/firstNameETProf"
+                android:layout_marginRight="20dp"
+                android:hint="First Name"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/streetTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Street:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/streetETProf"
+                android:layout_marginRight="20dp"
+                android:hint="Street"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/cityTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="City:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/cityETProf"
+                android:layout_marginRight="20dp"
+                android:hint="City"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/stateTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="State:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/stateSpinner"
+                android:entries="@array/states_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/zipTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Zip Code:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/zipETPRof"
+                android:layout_marginRight="20dp"
+                android:hint="Zip Code"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bdayTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Student Birth Date:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:textSize="12sp"
+                android:gravity="center"
+                android:id="@+id/bdayETPRof"
+                android:layout_marginRight="20dp"
+                android:hint="MM/DD/YYYY"
+                android:layout_centerVertical="true"
+                tools:ignore="RelativeOverlap" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ageTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Age:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/ageSpinner"
+                android:entries="@array/age_group_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/genderTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Gender:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/genderSpinner"
+                android:entries="@array/gender_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/iepTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Has an IEP:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/iepSpinner"
+                android:entries="@array/iep_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="28sp"
+                android:layout_marginLeft="10dp"
+                android:text="Magnet Application Section: "
+                android:textStyle="bold"
+                android:textColor="@android:color/black"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstChoiceTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="First Choice:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/firstChoiceSpinner"
+                android:entries="@array/elementary_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/secondChoiceTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Second Choice:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/secondChoiceSpinner"
+                android:entries="@array/elementary_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="60dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/thirdChoiceTVProf"
+                android:layout_marginLeft="20dp"
+                android:text="Third Choice:"
+                android:textSize="14sp"
+                android:textColor="@android:color/black"
+                android:layout_centerVertical="true"/>
+
+            <Spinner
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:id="@+id/thirdChoiceSpinner"
+                android:entries="@array/elementary_array"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginRight="20dp"
+                android:spinnerMode="dropdown"
+                android:layout_centerVertical="true"
+                android:background="@android:drawable/btn_dropdown"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/saveButton"
+                android:text="Save"
+                android:layout_centerVertical="true"
+                android:textColor="@android:color/white"
+                android:textSize="18sp"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="25dp"
+                android:background="@drawable/round_button_red"
+                android:layout_gravity="center_vertical"/>
+
+            <Button
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:id="@+id/logOutProf"
+                android:layout_gravity="center_vertical"
+                android:clickable="true"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:textSize="18sp"
+                android:textColor="@android:color/white"
+                android:background="@drawable/round_button_red"
+                android:text="Log Out" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+</com.elevenfifty.www.indycivichack.View.ProfileView>

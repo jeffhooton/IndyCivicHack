@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_margin="20dp"
+        android:id="@+id/redButton"
+        android:clickable="false"
+        android:background="@drawable/round_button_red"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/redTV"
+        android:text="RED CIRCLE: Demographic information missing from Magnet application, please complete demographic information to continue."
+        android:width="200dp"
+        android:layout_marginTop="20dp"
+        android:textSize="10sp"
+        android:layout_alignTop="@+id/redButton"
+        android:layout_alignLeft="@+id/greenTV"
+        android:layout_alignStart="@+id/greenTV" />
+
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/yellowButton"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/redButton"
+        android:layout_margin="20dp"
+        android:clickable="false"
+        android:background="@drawable/round_button_yellow"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/yellowTV"
+        android:text="YELLOW CIRCLE: Application information(try-out, etc) missing from Magnet application, please import application information to continue."
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+        android:layout_alignTop="@+id/yellowButton"
+        android:layout_alignLeft="@+id/redTV"
+        android:layout_alignStart="@+id/redTV" />
+    <Button
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/greenButton"
+        android:layout_alignParentLeft="true"
+        android:layout_margin="20dp"
+        android:layout_below="@id/yellowButton"
+        android:clickable="false"
+        android:background="@drawable/round_button_green"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/greenTV"
+        android:text="GREEN CIRCLE: Congratulations! \nApplication information complete! Check status of application on far right page."
+        android:textSize="10sp"
+        android:layout_marginTop="20dp"
+        android:width="200dp"
+        android:layout_alignTop="@+id/greenButton"
+        android:layout_alignRight="@+id/textView"
+        android:layout_alignEnd="@+id/textView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/black"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:gravity="center"
+        android:text="Swipe to Navigate through App"
+        android:id="@+id/textView" />
+
+</RelativeLayout>

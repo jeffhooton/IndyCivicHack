@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.elevenfifty.www.indycivichack.View.NavigationView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/ips_logo"
+        android:layout_alignBottom="@+id/npEmailEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="64dp" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/npEmailEditText"
+        android:inputType="textEmailAddress"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginTop="290dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Email Address" />
+
+    <EditText
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/npPasswordEditText"
+        android:inputType="textPassword"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:hint="Password"
+        android:layout_below="@id/npEmailEditText"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/buttonRowVPL"
+        android:orientation="horizontal"
+        android:layout_below="@id/npPasswordEditText">
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/signUpButton"
+            android:clickable="true"
+            android:text="Sign\nUp"
+            android:textSize="24sp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/round_button"
+            android:textColor="#ffff"
+            android:textStyle="bold"/>
+
+        <Button
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/logInButton"
+            android:clickable="true"
+            android:text="Log\nIn"
+            android:textSize="24sp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/round_button"
+            android:textColor="#ffff"
+            android:textStyle="bold" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/forgotPass"
+        android:text="Forgot Password?"
+        android:textSize="18sp"
+        android:clickable="true"
+        android:layout_below="@id/buttonRowVPL"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"/>
+
+</com.elevenfifty.www.indycivichack.View.NavigationView>
